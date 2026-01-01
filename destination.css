@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  background: url("img/background.jpg") no-repeat center center fixed;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: orange;
+}
+
+.tagline {
+  font-size: 12px;
+  color: white;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: orange;
+}
+.filters {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.filters ul {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filters ul li {
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters ul li:hover,
+.filters ul li.active {
+  background: orange;
+  color: black;
+}
+.filters-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.single-portfolio {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-portfolio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.single-portfolio h4 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.single-portfolio a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.single-portfolio a:hover {
+  color: orange;
+}
+.search-box {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .search-box input {
+      width: 50%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #no-results {
+      text-align: center;
+      color: red;
+      font-weight: bold;
+      display: none;
+      margin-top: 20px;
+    }
+    .single-portfolio {
+      transition: all 0.3s ease;
+    }
